@@ -2,9 +2,7 @@ const express = require ("express");
 const path = require("path");
 const app = express();
 
-//listen en localHost 3000
-
-app.listen( 3000 , () => { console.log("Servidor levantado "," http://localhost:3000/home")
+app.listen( process.env.PORT || 3000 , () => { console.log("Servidor levantado "," http://localhost:3000/home")
 });
 
 
